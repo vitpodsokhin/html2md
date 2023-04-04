@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  textarea {
+    font-family: monospace;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .line-numbers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 2rem;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding: 0.5rem;
+    font-family: monospace;
+    text-align: right;
+  }
+  
+  .wrap-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .output-container pre {
+    white-space: pre-wrap;
+  }
+  
+  .output-container .line-numbers {
+    background-color: transparent;
+    border-right: none;
+    padding-right: 0.5rem;
+    text-align: left;
+  }
+  
+  .output-container .wrap-toggle {
+    background-color: transparent;
+    border-left: none;
+    padding-left: 0.5rem;
+  }
+  

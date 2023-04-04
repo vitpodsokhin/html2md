@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML to Markdown Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>HTML to Markdown Converter</h1>
+      <form method="POST" id="htmlForm">
+        <div class="input-container">
+          <label for="htmlString">HTML Input:</label>
+          <textarea id="htmlString" name="htmlString" rows="16" cols="64"></textarea>
+        </div>
+        <div class="button-container">
+          <button type="submit" id="convertButton">Convert</button>
+        </div>
+      </form>
+      <hr>
+      <div class="output-container">
+        <label for="markdownString">Markdown Output:</label>
+        <textarea id="markdownString" name="markdownString" rows="16" cols="64" readonly></textarea>
+      </div>
+    </div>
+    <script>
+      $(function() {
+        $('form').on('submit', function(e) {
+          e.preventDefault();
+          var htmlString = $('textarea#htmlString').val();
+          $.ajax({
+            type: 'POST',
+            url: '/',
+            data: {'htmlString': htmlString},
+            success: function(response) {
+              $('textarea#markdownString').val(response.markdown_string);
+            },
+            dataType: 'json'
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

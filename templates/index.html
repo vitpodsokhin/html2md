@@ -15,9 +15,12 @@
     <label for="markdownString">Markdown Output:</label>
     <br>
     <textarea id="markdownString" name="markdownString" rows="16" cols="80"></textarea>
+    <br>
+    <button type="button" id="copyButton">Copy</button>
     <script>
       const form = document.getElementById('htmlForm');
       const markdownOutput = document.getElementById('markdownString');
+      const copyButton = document.getElementById('copyButton');
       form.addEventListener('submit', (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -29,6 +32,11 @@
         .then(data => {
           markdownOutput.value = data;
         });
+      });
+      copyButton.addEventListener('click', (event) => {
+        markdownOutput.select();
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
       });
     </script>
   </body>

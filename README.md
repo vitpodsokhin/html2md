@@ -12,7 +12,7 @@ To convert HTML to markdown, simply copy and paste your HTML code into the "HTML
 
 The application is built using the Flask framework for Python. The front-end of the application is implemented using HTML and JavaScript, and the back-end is implemented using Python.
 
-The conversion from markdown to HTML is handled by the html2markdown package, which is a Python library that converts HTML to markdown and vice versa.
+The conversion from markdown to HTML is handled by the html2markdown package, which is a Python library that converts HTML to markdown and vice versa (Not implemented yet!).
 
 The conversion process is initiated by clicking the "Convert" button on the front-end of the application. The JavaScript code in the front-end sends a request to the back-end of the application, passing the markdown or HTML text as a parameter. The back-end then uses the html2markdown package to convert the text and sends the converted text back to the front-end, where it is displayed in the appropriate text area.
 

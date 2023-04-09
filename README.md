@@ -8,7 +8,7 @@ This Flask web application converts HTML code to Markdown syntax. To use the app
 
 To run this Flask application, you need to have the following installed:
 
-*   Python 3.x (download and install from <a href="https://www.python.org/downloads/" target="_new">https://www.python.org/downloads/</a>)
+*   Python 3.x (download and install from [https://www.python.org/downloads/](https://www.python.org/downloads/))
 *   Flask (install using pip with `` pip install flask ``)
 *   html2markdown (install using pip with `` pip install html2markdown ``)
 
@@ -16,7 +16,7 @@ To run this Flask application, you need to have the following installed:
 
 Follow the steps below to install and run the Flask application:
 
-1.   Install Python 3.x by downloading and running the installer from <a href="https://www.python.org/downloads/" target="_new">https://www.python.org/downloads/</a>.
+1.   Install Python 3.x by downloading and running the installer from [https://www.python.org/downloads/](https://www.python.org/downloads/).
 2.   Install Flask by running `` pip install flask `` in the command prompt or terminal.
 3.   Install html2markdown by running `` pip install html2markdown `` in the command prompt or terminal.
 4.   Save the code to a file named `` app.py ``.
@@ -40,4 +40,4 @@ Follow the steps below to install and run the Flask application:
 
 ## Credits
 
-This Flask application was created by vit. It uses the <a href="https://github.com/dlon/html2markdown">html2markdown</a> and <a href="https://github.com/pallets/flask">flask</a> libraries.
+This Flask application was created by vit. It uses the [html2markdown](https://github.com/dlon/html2markdown) and [flask](https://github.com/pallets/flask) libraries.

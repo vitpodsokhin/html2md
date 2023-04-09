@@ -1,3 +1,4 @@
+// static/app.js
 $(function() {
     $('form#htmlForm').on('submit', function(e) {
         e.preventDefault();
